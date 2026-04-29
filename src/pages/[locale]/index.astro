@@ -16,10 +16,7 @@ const oboToken = await getOboToken(Astro.locals.token);
 let exampleData: ExampleData;
 
 try {
-  console.log(oboToken)
-  console.log(EXAMPLE_API_URL)
   exampleData = await fetchExampleData(oboToken, EXAMPLE_API_URL);
-  console.log(exampleData)
 } catch (error) {
   logger.error(`Error fetching example data: ${error}`);
   return new Response("Internal Server Error", { status: 503 });
