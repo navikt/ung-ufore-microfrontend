@@ -56,7 +56,7 @@ export default defineConfig({
       EXAMPLE_API_URL: envField.string({
         context: "server",
         access: "secret",
-        default: "http://localhost:3000/api/dialogmote",
+        default: "http://localhost:4444/api/dialogmote",
       }),
     },
   },
